@@ -6,10 +6,10 @@ int main(void)
 float firstcash;
 //Prompt user for cash
 
-//  int quarters=0;
-  //int dimes=0;
-  //int nickels=0;
-  //int pennies=0;
+int quarters=0;
+int dimes=0;
+int nickels=0;
+int pennies=0;
 
 do
     {
@@ -25,15 +25,15 @@ int sum=0;
 
   if(cash>25)
   {
-    int quarters=cash/25;
+    quarters=cash/25;
     cash=cash%25;
 
   }
- int sum+=quarters;
+ sum+=quarters;
 
  if(cash>10)
  {
-     int nickels=cash/10;
+     nickels=cash/10;
      cash=cash%10;
 
  }
@@ -41,7 +41,7 @@ int sum=0;
 
  if(cash>5)
  {
-     int dimes=cash/5;
+    dimes=cash/5;
      cash=cash%5;
 
  }
@@ -49,10 +49,10 @@ sum+=dimes;
 
  if(cash>=1)
  {
-     int pennies=cash/1;
+     pennies=cash/1;
 
  }
  sum+=pennies;
 
- printf('That is %i coins \n',sum);
+ printf("That is %i coins \n",sum);
 }
